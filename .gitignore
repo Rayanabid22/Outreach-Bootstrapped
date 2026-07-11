@@ -1,0 +1,13 @@
+# Secrets — never commit
+credentials.json
+.env
+
+# Local run state
+seen.db
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
