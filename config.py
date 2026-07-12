@@ -27,7 +27,10 @@ PRICE_PER_1000_SEARCHES = 10.00 # USD per 1,000 web searches
 # Google Sheet — SEPARATE tabs from the funded pipeline so both can live in
 # the same spreadsheet without colliding.
 # ---------------------------------------------------------------------------
-SHEET_ID = os.environ.get("SHEET_ID", "")  # or paste the ID here directly
+# The live "IC Bootstrapped Leads" Google Sheet (owned by mrayanabid510@gmail.com):
+# https://docs.google.com/spreadsheets/d/1CR0ZiaMhxAJDQYKMyJV_QDVwv-ygAQM8kxlIhTlLQTY/edit
+# Every run appends to this same sheet. Override with the SHEET_ID env var.
+SHEET_ID = os.environ.get("SHEET_ID", "") or "1CR0ZiaMhxAJDQYKMyJV_QDVwv-ygAQM8kxlIhTlLQTY"
 CREDENTIALS_FILE = "credentials.json"      # service-account key (gitignored)
 LEADS_TAB = "Bootstrapped Leads"
 PROCESSED_TAB = "Bootstrapped Processed"

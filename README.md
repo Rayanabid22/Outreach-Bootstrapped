@@ -46,7 +46,15 @@ python bootstrapped_pipeline.py check "Acme" "Plausible Analytics"
 
 ## Google Sheets setup
 
-Same service-account pattern as the funded pipeline:
+**The live sheet already exists** — [IC Bootstrapped Leads](https://docs.google.com/spreadsheets/d/1CR0ZiaMhxAJDQYKMyJV_QDVwv-ygAQM8kxlIhTlLQTY/edit)
+(owned by mrayanabid510@gmail.com), with the `Bootstrapped Leads` /
+`Bootstrapped Processed` / `Bootstrapped Rejected` tabs and the first 22
+leads loaded. `config.py` points at it by default, so every future run
+appends to this same sheet — new leads land at the bottom of the Leads tab,
+and the Processed tab keeps dedup in sync across machines.
+
+To let the pipeline write to it (one-time, ~5 min), use the same
+service-account pattern as the funded pipeline:
 
 1. Google Cloud project → enable the **Google Sheets API**.
 2. Create a **service account** → JSON key → save as `credentials.json` here
