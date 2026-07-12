@@ -1,0 +1,45 @@
+key,company,domain,date,outcome
+plausibleanalytics,Plausible Analytics,plausible.io,2026-07-12,qualified
+tally,Tally,tally.so,2026-07-12,qualified
+txtcart,TxtCart,txtcartapp.com,2026-07-12,qualified
+balsamiq,Balsamiq,balsamiq.com,2026-07-12,qualified
+gravityformsrocketgenius,Gravity Forms (Rocketgenius),www.gravityforms.com,2026-07-12,qualified
+memberpresscaseproof,MemberPress (Caseproof),memberpress.com,2026-07-12,qualified
+judgeme,Judge.me,judge.me,2026-07-12,qualified
+buzzsprouthigherpixels,Buzzsprout (Higher Pixels),www.buzzsprout.com,2026-07-12,qualified
+fathomanalytics,Fathom Analytics,usefathom.com,2026-07-12,qualified
+chatbase,Chatbase,www.chatbase.co,2026-07-12,qualified
+publer,Publer,publer.com,2026-07-12,qualified
+signwell,SignWell,www.signwell.com,2026-07-12,qualified
+contentstudio,ContentStudio,contentstudio.io,2026-07-12,qualified
+barn2plugins,Barn2 Plugins,barn2.com,2026-07-12,qualified
+zipifyapps,Zipify Apps,zipify.com,2026-07-12,qualified
+testimonialto,Testimonial.to,testimonial.to,2026-07-12,rejected: Below MRR bar: ~$50k MRR as of 2025 (< $80k)
+hypefury,Hypefury,hypefury.com,2026-07-12,rejected: Below MRR bar: ~$70k MRR reported 2025 (< $80k)
+mailmeteor,Mailmeteor,mailmeteor.com,2026-07-12,rejected: Below MRR bar: $770k est. ARR (~$64k MRR)
+wpfusionverygoodplugins,WP Fusion (Very Good Plugins),wpfusion.com,2026-07-12,rejected: Below MRR bar: ~$800k/yr per own transparency report (~$67k MRR)
+markerio,Marker.io,marker.io,2026-07-12,rejected: LOW CONFIDENCE: $492k rev 2024 vs unverified '$1M 2026' claim — likely below bar
+lifterlms,LifterLMS,lifterlms.com,2026-07-12,rejected: Below MRR bar: $750k ARR reported (~$62k MRR)
+bannerbear,Bannerbear,www.bannerbear.com,2026-07-12,rejected: Below MRR bar: ~$50k MRR per StarterStory (< $80k)
+screenstudio,Screen Studio,screen.studio,2026-07-12,rejected: LOW CONFIDENCE: no verifiable current revenue signal found (only 2023 anecdotes)
+socialbee,SocialBee,socialbee.com,2026-07-12,rejected: Acquired by WebPros (Aug 2024) — no longer independent/bootstrapped
+metricool,Metricool,metricool.com,2026-07-12,rejected: Raised ~€5M (Axon) and acquired by team.blue (Jul 2024) — funding profile out of scope
+betterpic,BetterPic,www.betterpic.io,2026-07-12,rejected: Raised $2.5M seed Aug 2025 — raise within last 12 months (funded pipeline's territory)
+thrivecart,ThriveCart,thrivecart.com,2026-07-12,"rejected: Raised $35M (LTV SaaS Growth Fund, 2023) — exceeds $5M hard cap"
+gymdesk,Gymdesk,gymdesk.com,2026-07-12,rejected: $32.5M majority buyout; founder stepped down as CEO — no longer bootstrapped/founder-led
+sendible,Sendible,www.sendible.com,2026-07-12,rejected: PE-owned since 2021 (ASG / Alpine Investors) — not independent
+accuranker,AccuRanker,www.accuranker.com,2026-07-12,rejected: PE investment (VaekstPartner Kapital 2019) — funding profile out of scope; ~$1.8M/yr also borderline
+seranking,SE Ranking,seranking.com,2026-07-12,"rejected: PE/VC-backed, 215 employees, acquired Planable 2025 — too large and funded"
+snovio,Snov.io,snov.io,2026-07-12,rejected: 206 employees — too large; would have in-house creative team
+fastmail,Fastmail,www.fastmail.com,2026-07-12,rejected: 650+ employees (est.) — too large for ICP
+metorik,Metorik,metorik.com,2026-07-12,rejected: Solo-run business — team too small (1-2)
+slicktext,SlickText,www.slicktext.com,2026-07-12,rejected: LOW CONFIDENCE: no revenue signals found; ownership includes an investment group
+keywordseverywhere,Keywords Everywhere,keywordseverywhere.com,2026-07-12,rejected: LOW CONFIDENCE: no findable revenue signals
+bricksbuilder,Bricks Builder,bricksbuilder.io,2026-07-12,rejected: LOW CONFIDENCE: bootstrapped but no findable revenue signals
+vitals,Vitals,vitals.app,2026-07-12,rejected: LOW CONFIDENCE: could not verify revenue or funding status this run
+tella,Tella,www.tella.com,2026-07-12,rejected: Raised $2.1M seed recently ($3.5M total incl. YC) — likely within 12-month exclusion window
+castos,Castos,castos.com,2026-07-12,"rejected: ICP + revenue fit ($3.6M ARR, TinySeed) but no confirmed-active social — X dormant since Dec 2023"
+waalaxy,Waalaxy,www.waalaxy.com,2026-07-12,"rejected: No active X/IG found (LinkedIn-first company; LinkedIn can't qualify) + 50+ staff, likely in-house creative"
+emailoctopus,EmailOctopus,emailoctopus.com,2026-07-12,rejected: Revenue fit but no confirmed-active social — X stale since ~2020
+missive,Missive,missiveapp.com,2026-07-12,rejected: Revenue fit ($8M ARR bootstrapped) but no confirmed-active social — newest indexed X activity Mar 2025
+ghost,Ghost,ghost.org,2026-07-12,"rejected: Revenue fit (~$6-10M ARR, no investors) but X activity unconfirmed (newest indexed Aug 2025; active mainly on ActivityPub, outside our qualification channels)"

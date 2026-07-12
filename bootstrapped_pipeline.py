@@ -274,6 +274,145 @@ def check_names(names: list[str]):
     seen.close()
 
 
+# ---------------------------------------------------------------------
+# Lite mode (no API key needed) — mirrors the funded pipeline's append:
+# an agent/human researches leads and records them here. Writes a dated
+# CSV + the dedup registry (+ the sheet if credentials are configured).
+# ---------------------------------------------------------------------
+
+def append_leads_file(path: str, dry_run: bool):
+    """Input: JSON array of lead objects.
+
+    Each object needs at least: company, qualified (bool). Qualified leads
+    also want website/category/region/mrr_range/revenue_confidence/signals/
+    funding_status/x_handle/x_active/etc.; non-qualified ones want
+    reject_reason. Qualified leads below the revenue bar (confidence <
+    REVENUE_CONFIDENCE_BAR or fewer than MIN_REVENUE_SIGNALS signals) are
+    refused — the pipeline never pads.
+    """
+    import csv
+    import json
+
+    from bp_pipeline.models import LEADS_HEADERS, RawCandidate
+
+    with open(path) as fh:
+        items = json.load(fh)
+    if not isinstance(items, list):
+        sys.exit("append: input must be a JSON array of lead objects")
+
+    today = date.today().isoformat()
+    seen = SeenStore(config.SEEN_DB)
+    seen.import_keys(load_registry().keys(), "registry")
+    seen.import_keys(load_funded_keys(), "funded-registry")
+
+    lead_rows, registry_rows, skipped = [], [], 0
+    for item in items:
+        company = str(item.get("company", "")).strip()
+        key = normalize_name(company)
+        if not company:
+            continue
+        if seen.is_seen(key):
+            print(f"  [append] skipping duplicate: {company}")
+            skipped += 1
+            continue
+        qualified = bool(item.get("qualified"))
+        signals = [str(s) for s in item.get("signals", []) if str(s).strip()]
+        try:
+            confidence = int(item.get("revenue_confidence") or 0)
+        except (TypeError, ValueError):
+            confidence = 0
+        if qualified and (confidence < config.REVENUE_CONFIDENCE_BAR
+                          or len(signals) < config.MIN_REVENUE_SIGNALS):
+            sys.exit(f"append: {company} is marked qualified but does not "
+                     f"meet the revenue bar (confidence {confidence}, "
+                     f"{len(signals)} signals) — fix the input; the pipeline "
+                     f"never pads.")
+        outcome = "qualified" if qualified else (
+            f"rejected: {item.get('reject_reason', '') or 'unspecified'}"
+        )
+        domain = _domain(str(item.get("website", "")))
+        registry_rows.append(
+            {"key": key, "company": company, "domain": domain,
+             "date": today, "outcome": outcome}
+        )
+        if not dry_run:
+            seen.mark(key, company, domain, outcome)
+        if qualified:
+            raw = RawCandidate(
+                company_name_raw=company,
+                source=str(item.get("source", "")),
+                source_url=str(item.get("source_url", "")),
+                evidence=str(item.get("evidence", "")),
+            )
+            ig_active = item.get("instagram_active")
+            lead = Lead(
+                raw=raw,
+                company=company,
+                website=str(item.get("website", "")),
+                category=str(item.get("category", "")),
+                region=str(item.get("region", "")),
+                funding_status=str(item.get("funding_status", "")),
+                in_house_creative=str(item.get("in_house_creative", "unknown")),
+                fit_reasoning=str(item.get("fit_reasoning", "")),
+                mrr_range=str(item.get("mrr_range", "")),
+                revenue_confidence=confidence,
+                signals_used=signals,
+                team_size=str(item.get("team_size", "")),
+                x_handle=str(item.get("x_handle", "")).lstrip("@"),
+                x_active=bool(item.get("x_active")),
+                linkedin_url=str(item.get("linkedin_url", "")),
+                instagram=str(item.get("instagram", "")),
+                instagram_active=bool(ig_active) if ig_active is not None else None,
+                discord=str(item.get("discord", "")),
+                email=str(item.get("email", "")),
+                founder_name=str(item.get("founder_name", "")),
+                founder_title=str(item.get("founder_title", "")),
+                founder_x=str(item.get("founder_x", "")).lstrip("@"),
+                founder_linkedin=str(item.get("founder_linkedin", "")),
+            )
+            lead_rows.append(lead.to_sheet_row(today))
+
+    if dry_run:
+        print(f"[append] dry run: {len(lead_rows)} leads, "
+              f"{len(registry_rows)} registry rows, {skipped} duplicates skipped")
+        seen.close()
+        return
+
+    # 1. Dated CSV in the repo (always works, no credentials needed).
+    csv_path = os.path.join("data", "leads", f"{today}.csv")
+    os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+    csv_exists = os.path.exists(csv_path)
+    with open(csv_path, "a", newline="") as fh:
+        writer = csv.writer(fh)
+        if not csv_exists:
+            writer.writerow(LEADS_HEADERS)
+        writer.writerows(lead_rows)
+
+    # 2. Committed dedup registry.
+    append_registry(registry_rows)
+
+    # 3. Google Sheet, best-effort (skipped silently if not configured).
+    sheet_note = "sheet not configured — skipped"
+    if config.SHEET_ID:
+        try:
+            from bp_pipeline.sheets import SheetWriter
+
+            sw = SheetWriter()
+            sw.append_leads(lead_rows)
+            sw.append_processed(
+                [[r["key"], r["company"], r["domain"], r["date"], r["outcome"]]
+                 for r in registry_rows]
+            )
+            sheet_note = "sheet updated"
+        except Exception as exc:
+            sheet_note = f"sheet write failed: {exc}"
+
+    seen.close()
+    print(f"[append] {len(lead_rows)} leads -> {csv_path}; "
+          f"{len(registry_rows)} rows -> registry; "
+          f"{skipped} duplicates skipped; {sheet_note}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -290,6 +429,12 @@ def main():
     check_parser = sub.add_parser("check", help="dedup-check company names")
     check_parser.add_argument("names", nargs="+", help="company names to check")
 
+    append_parser = sub.add_parser(
+        "append", help="record researched leads (lite mode, no API key)")
+    append_parser.add_argument("--in", dest="infile", required=True,
+                               help="JSON file with an array of lead objects")
+    append_parser.add_argument("--dry-run", action="store_true")
+
     args = parser.parse_args()
 
     if args.command == "run":
@@ -304,6 +449,8 @@ def main():
             log_fh.close()
     elif args.command == "check":
         check_names(args.names)
+    elif args.command == "append":
+        append_leads_file(args.infile, args.dry_run)
 
 
 if __name__ == "__main__":
