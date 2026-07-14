@@ -392,8 +392,17 @@ def append_leads_file(path: str, dry_run: bool):
     append_registry(registry_rows)
 
     # 3. Google Sheet, best-effort (skipped silently if not configured).
+    # BaseException guard: gspread's crypto deps can raise a pyo3
+    # PanicException (not an Exception subclass) just from being imported
+    # on a machine with a broken cffi — that must never lose a run whose
+    # CSV + registry writes already succeeded.
     sheet_note = "sheet not configured — skipped"
-    if config.SHEET_ID:
+    has_creds = os.path.exists(config.CREDENTIALS_FILE) or os.environ.get(
+        "GOOGLE_CREDENTIALS_JSON"
+    )
+    if config.SHEET_ID and not has_creds:
+        sheet_note = "no credentials.json / GOOGLE_CREDENTIALS_JSON — sheet skipped"
+    elif config.SHEET_ID:
         try:
             from bp_pipeline.sheets import SheetWriter
 
@@ -404,7 +413,7 @@ def append_leads_file(path: str, dry_run: bool):
                  for r in registry_rows]
             )
             sheet_note = "sheet updated"
-        except Exception as exc:
+        except BaseException as exc:  # noqa: BLE001
             sheet_note = f"sheet write failed: {exc}"
 
     seen.close()
