@@ -37,11 +37,7 @@ keywordseverywhere,Keywords Everywhere,keywordseverywhere.com,2026-07-12,rejecte
 bricksbuilder,Bricks Builder,bricksbuilder.io,2026-07-12,rejected: LOW CONFIDENCE: bootstrapped but no findable revenue signals
 vitals,Vitals,vitals.app,2026-07-12,rejected: LOW CONFIDENCE: could not verify revenue or funding status this run
 tella,Tella,www.tella.com,2026-07-12,rejected: Raised $2.1M seed recently ($3.5M total incl. YC) — likely within 12-month exclusion window
-castos,Castos,castos.com,2026-07-12,"rejected: ICP + revenue fit ($3.6M ARR, TinySeed) but no confirmed-active social — X dormant since Dec 2023"
 waalaxy,Waalaxy,www.waalaxy.com,2026-07-12,"rejected: No active X/IG found (LinkedIn-first company; LinkedIn can't qualify) + 50+ staff, likely in-house creative"
-emailoctopus,EmailOctopus,emailoctopus.com,2026-07-12,rejected: Revenue fit but no confirmed-active social — X stale since ~2020
-missive,Missive,missiveapp.com,2026-07-12,rejected: Revenue fit ($8M ARR bootstrapped) but no confirmed-active social — newest indexed X activity Mar 2025
-ghost,Ghost,ghost.org,2026-07-12,"rejected: Revenue fit (~$6-10M ARR, no investors) but X activity unconfirmed (newest indexed Aug 2025; active mainly on ActivityPub, outside our qualification channels)"
 originalityai,Originality.ai,originality.ai,2026-07-12,qualified
 senja,Senja,senja.io,2026-07-12,qualified
 beaverbuilder,Beaver Builder,www.wpbeaverbuilder.com,2026-07-12,qualified
@@ -49,20 +45,9 @@ dubsado,Dubsado,www.dubsado.com,2026-07-12,qualified
 skedsocial,Sked Social,skedsocial.com,2026-07-12,qualified
 ameliatmsmelograno,Amelia (TMS / Melograno),wpamelia.com,2026-07-12,qualified
 mobbin,Mobbin,mobbin.com,2026-07-12,qualified
-crisp,Crisp,crisp.chat,2026-07-12,"rejected: Revenue fit ($1.4M+, bootstrapped, team 14) but no confirmed-active social — X stale since ~2023"
-transistor,Transistor,transistor.fm,2026-07-12,"rejected: Revenue fit ($1M+ ARR, team 6, bootstrapped) but left X for Bluesky — no active X/IG within qualification channels"
-hunterio,Hunter.io,hunter.io,2026-07-12,"rejected: Revenue fit ($8M ARR, $0 raised, 31 staff) but no confirmed-active social — X (@EmailHunter) stale for years"
-canny,Canny,canny.io,2026-07-12,"rejected: Revenue fit ($3.5M ARR, bootstrapped) but no confirmed-active social — X newest indexed mid-2024"
-wisepops,Wisepops,wisepops.com,2026-07-12,"rejected: Revenue fit ($10.1M ARR, $0 raised, 17 staff) but no confirmed-active social — X unindexed, IG only 18 posts"
-optimonk,OptiMonk,www.optimonk.com,2026-07-12,"rejected: Revenue fit ($15M est. ARR, no funding, 47 staff) but no confirmed-active social — X stale since 2024, IG recency unverifiable"
-growave,Growave,growave.io,2026-07-12,"rejected: Revenue fit ($110k/mo, bootstrapped) but no confirmed-active social — X (1.1k followers) and IG (650 followers) both low-signal, no dated activity"
-appstle,Appstle,appstle.com,2026-07-12,rejected: Strong install signals (40k+ merchants) but no confirmed-active social — X posts not visible/stale
-pagefly,PageFly,pagefly.io,2026-07-12,"rejected: Strong review signals (11,900+ Shopify reviews, 160k merchants) but no confirmed-active X/IG — own account stale since 2023"
 cleanshotxmaketheweb,CleanShot X (MakeTheWeb),cleanshot.com,2026-07-12,rejected: LOW CONFIDENCE: no findable revenue signals; team appears very small (2 founders + few)
 sealsubscriptions,Seal Subscriptions,www.sealsubscriptions.com,2026-07-12,rejected: LOW CONFIDENCE: no findable revenue or funding signals this run
 tailwind,Tailwind Labs,tailwindcss.com,2026-07-12,rejected: Revenue collapsed ~80% (AI-era docs-traffic loss); laid off 75% of engineers Jan 2026 — not currently able-to-afford
-tuple,Tuple,tuple.app,2026-07-12,"rejected: Revenue fit (~$2M+ ARR, 9 staff, bootstrapped) but company X stale since ~2023 (markets via creator sponsorships instead)"
-olark,Olark,www.olark.com,2026-07-12,"rejected: Revenue fit ($7.2M 2024, bootstrapped) but no confirmed-active social — X accounts dormant; revenue also declining ($14.4M in 2018)"
 typingmind,TypingMind,www.typingmind.com,2026-07-14,qualified
 bannerbear,Bannerbear,www.bannerbear.com,2026-07-14,qualified
 serpapi,SerpApi,serpapi.com,2026-07-14,qualified
@@ -85,16 +70,31 @@ simplybookme,SimplyBook.me,simplybook.me,2026-07-14,rejected: Acquired by team.b
 supergrow,Supergrow,www.supergrow.ai,2026-07-14,rejected: Below MRR bar: founder-public $18-32k MRR (< $80k)
 kirbycms,Kirby CMS,getkirby.com,2026-07-14,rejected: LOW CONFIDENCE: bootstrapped and long-lived but no findable revenue figure — only 1 weak signal
 gempages,GemPages,gempages.net,2026-07-14,rejected: LOW CONFIDENCE: strong Shopify review counts but no independent revenue or funding signals found
-craftcms,Craft CMS,craftcms.com,2026-07-14,"rejected: Revenue fit (~$10M, 8 staff, bootstrapped) but no confirmed-active social — @craftcms on X is a parody account, no real active channel found"
-socialinsider,Socialinsider,www.socialinsider.io,2026-07-14,rejected: No confirmed-active social — X newest indexed Jun 2025 and sparse
-matomo,Matomo,matomo.org,2026-07-14,"rejected: Revenue fit (open-source analytics, bootstrapped) but no confirmed-active social within qualification channels"
-everhour,Everhour,everhour.com,2026-07-14,"rejected: Revenue fit (bootstrapped time-tracking, healthy G2 volume) but no confirmed-active social — X stale"
-appsignal,AppSignal,www.appsignal.com,2026-07-14,"rejected: Revenue fit (bootstrapped APM, 10+ years) but no confirmed-active social — X stale"
-paperform,Paperform,paperform.co,2026-07-14,"rejected: Revenue fit (bootstrapped forms SaaS, husband-wife founded) but no confirmed-active social — X stale"
 betterproposals,Better Proposals,betterproposals.io,2026-07-14,"rejected: Borderline revenue (~$990k/yr, just under bar) AND X inactive — double fail"
-sunsama,Sunsama,www.sunsama.com,2026-07-14,"rejected: Revenue fit (profitable daily-planner, YC-only funding) but no confirmed-active social — X stale"
-fera,Fera,www.fera.ai,2026-07-14,"rejected: Revenue fit (Shopify reviews app, solid installs) but all socials fail the activity check"
 saral,SARAL,www.getsaral.com,2026-07-14,"rejected: Funding-status conflict: founder claims bootstrapped but Tracxn lists it as funded — cannot verify bootstrapped, and confidence below bar"
 headshotpro,HeadshotPro,www.headshotpro.com,2026-07-14,"rejected: Revenue fit ($300k MRR founder-public) but Danny Postma runs it solo 'without employees' — team of 1-2 is below the 4-40 sweet spot, no org to buy studio motion design"
 renderforest,Renderforest,www.renderforest.com,2026-07-14,rejected: ~96 staff (over team-size bar) and funding history unverifiable; also video-maker product = in-house creative by definition
-lumen5,Lumen5,lumen5.com,2026-07-14,"rejected: Revenue fit (~$7M rev, only ~$250k raised, 49 staff) but no confirmed-active social — X newest indexed ~May 2025, mostly 2017-era posts"
+hunterio,Hunter.io,hunter.io,2026-07-14,qualified
+wisepops,Wisepops,wisepops.com,2026-07-14,qualified
+optimonk,OptiMonk,www.optimonk.com,2026-07-14,qualified
+missive,Missive,missiveapp.com,2026-07-14,qualified
+ghost,Ghost,ghost.org,2026-07-14,qualified
+castos,Castos,castos.com,2026-07-14,qualified
+canny,Canny,canny.io,2026-07-14,qualified
+olark,Olark,www.olark.com,2026-07-14,qualified
+craftcms,Craft CMS,craftcms.com,2026-07-14,qualified
+lumen5,Lumen5,lumen5.com,2026-07-14,qualified
+tuple,Tuple,tuple.app,2026-07-14,qualified
+crisp,Crisp,crisp.chat,2026-07-14,qualified
+transistor,Transistor,transistor.fm,2026-07-14,qualified
+emailoctopus,EmailOctopus,emailoctopus.com,2026-07-14,qualified
+matomo,Matomo,matomo.org,2026-07-14,qualified
+pagefly,PageFly,pagefly.io,2026-07-14,qualified
+growave,Growave,growave.io,2026-07-14,qualified
+appstle,Appstle,appstle.com,2026-07-14,qualified
+everhour,Everhour,everhour.com,2026-07-14,qualified
+appsignal,AppSignal,www.appsignal.com,2026-07-14,qualified
+paperform,Paperform,paperform.co,2026-07-14,qualified
+sunsama,Sunsama,www.sunsama.com,2026-07-14,qualified
+fera,Fera,www.fera.ai,2026-07-14,qualified
+socialinsider,Socialinsider,www.socialinsider.io,2026-07-14,qualified

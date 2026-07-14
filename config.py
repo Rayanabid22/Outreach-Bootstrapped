@@ -97,6 +97,15 @@ NO_RAISE_MONTHS = 12              # raised anything in the last N months = exclu
 LIGHT_FUNDING_QUIET_MONTHS = 18   # lightly-funded requires no round in last N months
 
 # ---------------------------------------------------------------------------
+# Stage 5 — social qualification bar
+# ---------------------------------------------------------------------------
+# False (Rayan, 2026-07-14): a stale X/Instagram no longer disqualifies a
+# revenue-verified company — activity is still checked and recorded in the
+# X Active / Instagram columns so outreach can prioritize, but quiet
+# companies stay in the Leads tab. Set True to restore the hard bar.
+REQUIRE_ACTIVE_SOCIAL = False
+
+# ---------------------------------------------------------------------------
 # Stage 4 — revenue estimation bars
 # ---------------------------------------------------------------------------
 MRR_BAR = "$80k"                  # estimated MRR must be at least this

@@ -77,10 +77,18 @@ def enrich(lead: Lead, stats: RunStats) -> Lead:
 
 
 def is_qualified(lead: Lead) -> bool:
-    """Qualification bar: at least one confirmed-active social.
+    """Qualification bar for social activity.
 
-    X is the priority signal — an active X alone qualifies. Instagram
+    When config.REQUIRE_ACTIVE_SOCIAL is True: at least one confirmed-active
+    social. X is the priority signal — an active X alone qualifies. Instagram
     activity is the best-effort backup. A LinkedIn URL alone does NOT
     qualify (no activity check is possible).
+
+    When False (Rayan's decision, 2026-07-14): social activity is recorded
+    in the X Active / Instagram columns but no longer disqualifies a
+    revenue-verified company — too many otherwise-perfect bootstrapped
+    companies simply don't post.
     """
+    if not config.REQUIRE_ACTIVE_SOCIAL:
+        return True
     return lead.x_active or bool(lead.instagram_active)
