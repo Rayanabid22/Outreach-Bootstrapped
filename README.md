@@ -1,7 +1,7 @@
 # IC Bootstrapped Leads Pipeline
 
 Finds **established, revenue-generating software companies** that are
-**bootstrapped or lightly funded** — roughly $80–150k+ MRR, no round in the
+**bootstrapped or lightly funded** — roughly $50k+ MRR, no round in the
 last 12 months, no in-house creative team — estimates their revenue from
 public proxy signals, verifies at least one social is active (X priority),
 and appends qualified leads to the **Bootstrapped Leads** tab of the Google

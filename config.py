@@ -108,7 +108,8 @@ REQUIRE_ACTIVE_SOCIAL = False
 # ---------------------------------------------------------------------------
 # Stage 4 — revenue estimation bars
 # ---------------------------------------------------------------------------
-MRR_BAR = "$80k"                  # estimated MRR must be at least this
+MRR_BAR = "$50k"                  # estimated MRR must be at least this
+                                  # (lowered from $80k per Rayan, 2026-07-14)
 REVENUE_CONFIDENCE_BAR = 60       # 0-100 score must be >= this
 MIN_REVENUE_SIGNALS = 2           # and at least this many independent signals
 
