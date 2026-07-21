@@ -207,3 +207,15 @@ simpleanalytics,Simple Analytics,www.simpleanalytics.com,2026-07-21,rejected: Bo
 pirschanalytics,Pirsch Analytics,pirsch.io,2026-07-21,"rejected: Below bar: $62.5k revenue (~$5k MRR), 1-person team"
 zenrows,ZenRows,www.zenrows.com,2026-07-21,rejected: Raised €1.1M seed (2022) with no verifiable revenue at/above bar — LOW CONFIDENCE + recent-ish raise
 hiveage,Hiveage,www.hiveage.com,2026-07-21,rejected: Conflicting data ($6M rev vs 2 employees is implausible); 2-person listing is below the team-size floor
+retentioncom,Retention.com,www.retention.com,2026-07-21,qualified
+porkbun,Porkbun,porkbun.com,2026-07-21,qualified
+savvycal,SavvyCal,savvycal.com,2026-07-21,qualified
+saleshandy,Saleshandy,www.saleshandy.com,2026-07-21,qualified
+circleboom,Circleboom,circleboom.com,2026-07-21,qualified
+starterstory,Starter Story,www.starterstory.com,2026-07-21,"rejected: Acquired by HubSpot (Pat Walls tweeted the offer, deal closed) — no longer independent"
+sparktoro,SparkToro,sparktoro.com,2026-07-21,rejected: Below bar: $330K ARR (~$27.5k MRR) and team of 3 — despite Rand Fishkin's very active X
+wynter,Wynter,wynter.com,2026-07-21,rejected: $16.3M ARR bootstrapped but ~148 employees — over the team-size bar
+levelsfyi,Levels.fyi,www.levels.fyi,2026-07-21,"rejected: Multiple VC investors listed (Adapt Ventures, Browder Capital, Founders Inc et al.) + wildly conflicting revenue ($60K vs $2.8M) — funded and LOW CONFIDENCE"
+readwise,Readwise,readwise.io,2026-07-21,rejected: Funding-status conflict: famous 'Why We're Bootstrapping' stance vs recent-funding signals at ~$58M valuation — cannot verify no raise within 12 months
+buttondown,Buttondown,buttondown.com,2026-07-21,"rejected: Below bar: $392K revenue (~$33k MRR), though fully bootstrapped with 6 staff — revisit as it grows"
+lemlist,lemlist,www.lemlist.com,2026-07-21,rejected: Bootstrapped to $53M ARR but ~160 employees — far over the team-size bar (only outside capital was a founder secondary)
