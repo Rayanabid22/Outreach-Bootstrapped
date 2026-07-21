@@ -117,7 +117,10 @@ MIN_REVENUE_SIGNALS = 2           # and at least this many independent signals
 INSTALL_RANGE = (3_000, 50_000)   # Chrome/Shopify/Slack/WordPress installs
 G2_REVIEW_RANGE = (40, 400)       # below 40 = too small; above 400 = usually VC-backed (verify, don't assume)
 MIN_MONTHLY_TRAFFIC = 20_000      # est. monthly visits floor for B2B SaaS
-TEAM_SIZE_RANGE = (4, 40)         # LinkedIn headcount sweet spot
+TEAM_SIZE_RANGE = (4, 150)        # LinkedIn headcount sweet spot
+                                  # (raised from 40 per Rayan 2026-07-21 to
+                                  # widen the pool toward the 400-500 target;
+                                  # >~70 staff = flag possible in-house creative)
 MIN_PRODUCT_AGE_YEARS = 2
 
 # ---------------------------------------------------------------------------

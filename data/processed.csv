@@ -57,8 +57,6 @@ jenniai,Jenni AI,jenni.ai,2026-07-14,qualified
 scrapingbee,ScrapingBee,www.scrapingbee.com,2026-07-14,rejected: Acquired (8-figure exit announced by founders) — no longer an independent bootstrapped buyer
 pixieset,Pixieset,pixieset.com,2026-07-14,rejected: PE growth investment + ~173 staff — both over the funding and team-size bars
 youcanbookme,YouCanBookMe,youcanbook.me,2026-07-14,rejected: Acquired by Capacity — no longer independent
-crowdin,Crowdin,crowdin.com,2026-07-14,rejected: ~120 staff — well over the 4-40 team-size sweet spot; likely has in-house creative
-wedevs,weDevs,wedevs.com,2026-07-14,rejected: ~111 staff — over the team-size bar; likely in-house creative team
 memtime,Memtime,www.memtime.com,2026-07-14,rejected: Raised a Series A (2023) — hard exclude
 uptimerobot,UptimeRobot,uptimerobot.com,2026-07-14,rejected: PE-owned (itself part of a portfolio roll-up) — not founder-led bootstrapped
 simplybookme,SimplyBook.me,simplybook.me,2026-07-14,rejected: Acquired by team.blue (2023) — no longer independent
@@ -139,9 +137,6 @@ smarterqueue,SmarterQueue,smarterqueue.com,2026-07-14,rejected: LOW CONFIDENCE: 
 sublimehq,Sublime HQ,www.sublimehq.com,2026-07-14,rejected: LOW CONFIDENCE: no revenue figures; ~3 employees (below team floor); conflicting funding records ($5M ISAI 2015 vs none)
 thrivethemes,Thrive Themes,thrivethemes.com,2026-07-14,rejected: Acquired by Awesome Motive — no longer independent
 towerfournova,Tower (Fournova),www.git-tower.com,2026-07-14,rejected: Bootstrapped to 7-figure ARR but subsequently acquired (founder-stated on Indie Hackers)
-doisttodoist,Doist (Todoist),doist.com,2026-07-14,rejected: Fully bootstrapped at $20M+ ARR but ~102 employees — over the team-size bar (consistent with Crowdin/weDevs rejections)
-instantlyai,Instantly.ai,instantly.ai,2026-07-14,rejected: Bootstrapped to $40M ARR but now 101-200 employees — over the team-size bar
-uscreen,Uscreen,www.uscreen.tv,2026-07-14,rejected: Bootstrapped to $20M ARR but 140 employees — over the team-size bar; video platform likely has in-house creative
 podia,Podia,www.podia.com,2026-07-14,rejected: Raised $4.75M over 4 rounds — over the $3M light-funding cap
 37signalsbasecamp,37signals (Basecamp),37signals.com,2026-07-14,rejected: Self-funded icon but ~171 employees — far over the team-size bar; has in-house creative
 seotesting,SEOTesting,seotesting.com,2026-07-14,rejected: Below bar: $550K revenue (~$46k MRR) — just under the new $50k bar; revisit if it grows
@@ -184,16 +179,13 @@ cushion,Cushion,cushion.ai,2026-07-21,rejected: Halal gate: pay-over-time / bill
 cometly,Cometly,www.cometly.com,2026-07-21,rejected: Raised ~$63M ($50M Series B 2025) — Series A+ hard exclude
 arcadsai,Arcads.ai,www.arcads.ai,2026-07-21,rejected: Reported $25M raised (Latka) — over the funding cap; conflicts with bootstrapped claim
 venngage,Venngage,venngage.com,2026-07-21,rejected: Raised a $6M Series A (Sep 2025) — within 12 months AND Series A hard exclude
-visme,Visme,www.visme.co,2026-07-21,rejected: Bootstrapped $15M ARR but ~98 employees — over team-size bar
 mouseflow,Mouseflow,mouseflow.com,2026-07-21,rejected: Acquired by Offspring Capital (Aug 2025) + prior Series A — not independent bootstrapped
 document360,Document360,document360.com,2026-07-21,rejected: Bootstrapped (Kovai) $3M+ but 250+ employees — over team-size bar
-ahrefs,Ahrefs,ahrefs.com,2026-07-21,rejected: Bootstrapped $149M ARR but 143 employees — over team-size bar; has in-house creative
 fibery,Fibery,fibery.io,2026-07-21,rejected: Raised $8.3M (AltaIR/Tal Ventures) — over the funding cap
 mailerlite,MailerLite,www.mailerlite.com,2026-07-21,rejected: Bootstrapped $12M+ rev but ~149-168 employees — over team-size bar
 systemeio,Systeme.io,systeme.io,2026-07-21,rejected: Bootstrapped $20M ARR but ~185 employees — over team-size bar
 learnworlds,LearnWorlds,www.learnworlds.com,2026-07-21,rejected: Raised $32M (Insight Partners) — over the funding cap
 weglot,Weglot,www.weglot.com,2026-07-21,rejected: Raised $50.5M (Partech Growth) — over the funding cap
-localazy,Localazy,localazy.com,2026-07-21,rejected: Bootstrapped $8.7M ARR but 87 employees — over team-size bar
 meisterlabsmeistertask,MeisterLabs (MeisterTask),www.meistertask.com,2026-07-21,rejected: 182 employees and $52M growth round — over both team-size and funding bars
 rocketlane,Rocketlane,www.rocketlane.com,2026-07-21,rejected: Latka lists bootstrapped but 88 employees — over team-size bar (and other sources show VC funding)
 bunnynet,Bunny.net,bunny.net,2026-07-21,rejected: Raised a $6M Series A — over funding cap; also 78 employees
@@ -214,7 +206,6 @@ saleshandy,Saleshandy,www.saleshandy.com,2026-07-21,qualified
 circleboom,Circleboom,circleboom.com,2026-07-21,qualified
 starterstory,Starter Story,www.starterstory.com,2026-07-21,"rejected: Acquired by HubSpot (Pat Walls tweeted the offer, deal closed) — no longer independent"
 sparktoro,SparkToro,sparktoro.com,2026-07-21,rejected: Below bar: $330K ARR (~$27.5k MRR) and team of 3 — despite Rand Fishkin's very active X
-wynter,Wynter,wynter.com,2026-07-21,rejected: $16.3M ARR bootstrapped but ~148 employees — over the team-size bar
 levelsfyi,Levels.fyi,www.levels.fyi,2026-07-21,"rejected: Multiple VC investors listed (Adapt Ventures, Browder Capital, Founders Inc et al.) + wildly conflicting revenue ($60K vs $2.8M) — funded and LOW CONFIDENCE"
 readwise,Readwise,readwise.io,2026-07-21,rejected: Funding-status conflict: famous 'Why We're Bootstrapping' stance vs recent-funding signals at ~$58M valuation — cannot verify no raise within 12 months
 buttondown,Buttondown,buttondown.com,2026-07-21,"rejected: Below bar: $392K revenue (~$33k MRR), though fully bootstrapped with 6 staff — revisit as it grows"
@@ -223,3 +214,12 @@ rb2b,RB2B,www.rb2b.com,2026-07-21,qualified
 zenmaid,ZenMaid,www.zenmaid.com,2026-07-21,qualified
 smallpdf,Smallpdf,smallpdf.com,2026-07-21,rejected: 75-79 employees (over team-size bar) + conflicting $5M Series A record
 ipqualityscoreipqs,IPQualityScore (IPQS),www.ipqualityscore.com,2026-07-21,"rejected: $32M+ revenue but 68-200 employees (conflicting, all over the bar); 'bootstrap mindset' marketing copy is not a verifiable funding record"
+ahrefs,Ahrefs,ahrefs.com,2026-07-21,qualified
+instantlyai,Instantly.ai,instantly.ai,2026-07-21,qualified
+doisttodoist,Doist (Todoist),doist.com,2026-07-21,qualified
+uscreen,Uscreen,www.uscreen.tv,2026-07-21,qualified
+wynter,Wynter,wynter.com,2026-07-21,qualified
+visme,Visme,www.visme.co,2026-07-21,qualified
+localazy,Localazy,localazy.com,2026-07-21,qualified
+crowdin,Crowdin,crowdin.com,2026-07-21,qualified
+wedevs,weDevs,wedevs.com,2026-07-21,qualified
